@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KanBan Task manager</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">TuMi</div>
+            <input type="search" class="search" placeholder="search">
+            <!--Add menu images here-->
+            <div class="menu-options">
+                <img src="search-icon.jpg" alt="" width="40px" height="30px">
+                <img src="settings-icon.jpg" alt="" width="40px" height="30px">
+            </div>
+        </div>
+    </header>
+
+    <div class="whole-body">
+        <div class="left-side">
+            <section class="horizontal-nav">
+                <div class="container">
+                    <div class="home">
+                        <nav>
+                            <a href="">Accounts</a>
+                            <a href="">Contacts</a>
+                            <a href="">Leads</a>
+                            <a href="">Opportunities</a>
+                            <a href="">Emails</a>
+                            <a href="">Calendar</a>
+                            <a href="">Cases</a>
+                            <a href="">Documents</a>
+                            <a href="">Reports</a>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="right-side">
+            <section class="vertical-nav">
+                <h1 class="heading">Tasks</h1>
+                <!--Add search icon here-->
+                <button class="js-add-task"><span class="plus-sign">+</span> Add Tasks</button>
+            </section>
+
+            <section>
+                <div class="task-nav">
+                    <a href="" id="todo">To-Do</a>
+                    <a href="" id="in-progress">Tasks in Progress</a>
+                    <a href="" id="tests">Testing</a>
+                    <a href="" id="done">Tasks Done</a>
+                </div>
+            </section>
+
+            <section class="main-body">
+                <aside class="To-Do">
+                    <div class="task-class">Design</div>
+
+                    <div class="task-headline">
+                        <h4>High priority mobile app design gig</h4>
+                    </div>
+
+                    <div class="task-description">
+                        <p>High priority mobile app development for an health NGO</p>
+                    </div>
+
+                    <div class="below">
+                        <div class="assignee">Insert name or picture</div>
+
+                        <div class="priority">High</div>
+                    </div>
+                    <!--Attach link image here-->
+                    <div class="relevant-files"></div>
+                </aside>
+
+                <aside class="task-in-progress">
+                    <div class="task-class">Design</div>
+
+                    <div class="task-headline">
+                        <h4>Create dashboard for the website</h4>
+                    </div>
+
+                    <div class="task-description">
+                        <p>Do the navigation bar along with the hero section and also the footer</p>
+                    </div>
+
+                    <div class="below">
+
+                        <div class="assignee">Insert Name or picture</div>
+
+                        <div class="priority">Medium</div>
+                    </div>
+
+                    <div class="task-progress">
+                        <p>Progress</p>
+                        <!--Add progress bar-->
+                        <div class="progress-bar"></div>
+                    </div>
+                </aside>
+
+                <aside class="testing">
+                    <div class="task-class">Development</div>
+
+                    <div class="task-headline">
+                        <h4>Design of dashboard</h4>
+                    </div>
+
+                    <div class="task-description">
+                        <p>Design of the dashboard of said website</p>
+                    </div>
+
+                    <span>Testing in progress.</span>
+                </aside>
+
+                <aside class="finished-tasks">
+                    <div class="task-class">Deployment</div>
+
+                    <div class="task-headline">
+                        <h4>Deploy the project to github</h4>
+                    </div>
+
+                    <div class="task-description">
+                        <p>Deploy using CI/CD techniques like a real developr or enginner would</p>
+                    </div>
+                </aside>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="home-page.js" type="module"></script>
+</body>
+</html>

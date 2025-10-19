@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    background: #ecf6ec;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    padding: .5em 1em;
+    background: #eeeeee;
+}
+
+.logo {
+    font-size: 2em;
+    margin-left: .4em;
+}
+
+.menu-options {
+    margin-right: 1em;
+    margin-top: .3em;
+    img {
+        margin-right: 1.4em;
+        margin-bottom: -1em;
+    }
+}
+
+.whole-body {
+    display: flex;
+}
+
+.left-side {
+    margin-right: 5em;
+}
+
+#todo {
+    margin-left: 6em;
+}
+
+#in-progress {
+    margin-left: 2em;
+}
+
+#tests {
+    margin-right: 2em;
+}
+
+#done {
+    margin-right: 6em;
+}
+
+.horizontal-nav {
+    .container {
+        margin-top: 1.4em;
+        background: #070731;
+        height: 100vh;
+        width: 145%;
+        .home a {
+            display: flex;
+            flex-direction: column;
+            margin-left: 1em;
+            margin-top: 1em;
+            padding: .4em .3em;
+            color: #ecf6ec;
+            text-decoration: dashed;
+        }
+    }
+}
+
+.vertical-nav {
+    display: flex;
+    justify-content: space-between;
+    button {
+        margin-top: 3em;
+        margin-left: 63em;
+        color: #ecf6ec;
+        border-radius: .5em;
+        background: #41048c;
+        font-size: .9em;
+        margin-right: 2em;
+        padding: .1em 1em;  
+        cursor: pointer;
+        .plus-sign {
+            font-size: 1.4em;
+            margin-right: .3em;
+            font-weight: bold;
+        }
+    }
+}
+
+.task-nav {
+    display: flex;
+    justify-content: space-between;
+    border: 1px none;
+    background: #070731;
+    padding: 1.2em 1em;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    a {
+        text-decoration: none;
+        color: #ecf6ec;
+    }
+}
+
+.main-body {
+    display: flex;
+    margin-right: 1em;
+    flex-wrap: wrap;
+    aside {
+        background: #eeeeee;
+        margin-left: 1em;
+        margin-bottom: 1em;
+        border: 1px solid;
+        width: 23%;
+        border-radius: 1em;
+    }
+}
+
+.task-class {
+    margin-top: 1.2em;
+    margin-left: .5em;
+    color: #daf3da;
+    font-size: 1.1em;
+    width: 40%;
+    border-radius: 1em;
+    text-align: center;
+    padding: .3em;
+    background: #41048c;
+}
+
+.task-headline {
+    margin-left: 1em;
+}
+
+.task-description {
+    margin-left: .6em;
+    width: 90%;
+}
+
+.below {
+    display: flex;
+    justify-content: space-evenly;
+}
